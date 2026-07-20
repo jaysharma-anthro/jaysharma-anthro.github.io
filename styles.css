@@ -299,13 +299,10 @@ footer a { color: white; }
   }
 
   .portrait {
-  width: min(100%, 300px);
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  display: block;
-  border-radius: 2px;
-  box-shadow: 14px 14px 0 var(--paper);
-}
-    max-width: 300px;
-  }
+    width: 300px;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 14px 14px 0 var(--paper);
 }
