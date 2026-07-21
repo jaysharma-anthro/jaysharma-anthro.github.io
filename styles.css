@@ -99,14 +99,25 @@ h1 {
   letter-spacing: -.04em;
 }
 
-h2 {
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  margin: 0 0 22px;
+.section:not(.feature) > h2 {
+  font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+  margin-bottom: 16px;
 }
 
 h3 {
   font-size: 1.45rem;
   margin-bottom: 8px;
+}
+.grid-3 .card h3 {
+  font-size: 1.05rem;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.grid-3 .card p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin-bottom: 0;
 }
 
 .subtitle {
@@ -178,13 +189,13 @@ h3 {
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 36px;
+  gap: 17px;
+  margin-top: 25px;
 }
 
 .card {
   background: var(--paper);
-  padding: 28px;
+  padding: 20px;
   border: 1px solid var(--line);
 }
 
