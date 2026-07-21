@@ -24,3 +24,39 @@ h2{font-size:clamp(2rem,4vw,3.2rem);margin:0 0 22px} h3{font-size:1.45rem;margin
 .grid-3 .card h3{font-size:1.05rem;margin-top:0;margin-bottom:6px}.grid-3 .card p{color:var(--muted);font-size:.9rem;line-height:1.55;margin-bottom:0}
 footer{margin-top:72px;background:var(--forest-dark);color:rgba(255,255,255,.82)}.footer-inner{width:min(var(--max),calc(100% - 40px));margin:auto;padding:42px 0;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
 @media(max-width:800px){.nav{align-items:flex-start;padding:18px 0;flex-direction:column;gap:10px}.nav-links{gap:13px 18px}.hero,.feature,.grid-3{grid-template-columns:1fr}.hero{padding-top:52px;gap:38px}.portrait-wrap{justify-content:flex-start}.portrait{width:250px;height:313px}}
+
+/* Final layout correction */
+
+.nav,
+main,
+.footer-inner {
+  width: min(1120px, calc(100% - 80px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  width: 100%;
+  grid-template-columns: minmax(0, 1.55fr) 270px;
+  gap: 64px;
+}
+
+.position-title {
+  display: block;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #18342a;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 800px) {
+  .nav,
+  main,
+  .footer-inner {
+    width: calc(100% - 40px);
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
