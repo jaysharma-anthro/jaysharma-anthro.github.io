@@ -60,3 +60,40 @@ main,
     grid-template-columns: 1fr;
   }
 }
+/* Research page adjustments */
+
+.research-page .page-header {
+  padding: 34px 0 20px;
+}
+
+.research-page .page-header h1 {
+  font-size: clamp(1.4rem, 2.45vw, 2.1rem);
+  margin-bottom: 0;
+}
+
+.research-page .section {
+  padding: 46px 0 64px;
+}
+
+.research-page .prose {
+  max-width: 100%;
+}
+
+.research-page .prose .section-intro {
+  max-width: 100%;
+  margin: 0 0 28px;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.research-page .prose h2 {
+  font-size: clamp(1.4rem, 2.8vw, 2.25rem);
+  margin: 32px 0 14px;
+}
+
+.research-page .prose p {
+  max-width: 100%;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
