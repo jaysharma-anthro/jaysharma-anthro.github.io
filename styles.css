@@ -35,8 +35,8 @@ h2{font-size:clamp(2rem,4vw,3.2rem);margin:0 0 22px} h3{font-size:1.45rem;margin
 .feature{display:grid;grid-template-columns:.72fr 1.28fr;gap:52px;align-items:start}
 .label{color:var(--terracotta);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}.text-link{font-weight:600;text-decoration:none}
 .research-section>h2{
-  font-size:1.15rem;
-  margin-bottom:10px;
+  font-size:1.1rem;
+  margin-bottom:12px;
 }
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:25px}.card{background:var(--paper);padding:20px;border:1px solid var(--line)}
 .grid-3 .card h3{font-size:1.05rem;margin-top:0;margin-bottom:6px}.grid-3 .card p{color:var(--muted);font-size:.9rem;line-height:1.55;margin-bottom:0}
