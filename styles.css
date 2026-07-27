@@ -173,3 +173,79 @@ main,
   font-weight: 600;
   text-decoration: none;
 }
+/* Teaching page adjustments */
+
+.teaching-page .page-header {
+  padding: 34px 0 20px;
+}
+
+.teaching-page .page-header h1 {
+  font-size: clamp(1.4rem, 2.45vw, 2.1rem);
+  margin-bottom: 0;
+}
+
+.teaching-page .teaching-content {
+  padding: 46px 0 64px;
+}
+
+.teaching-page .teaching-introduction {
+  max-width: 900px;
+  margin-bottom: 48px;
+}
+
+.teaching-page .teaching-introduction p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.teaching-page .teaching-group {
+  max-width: 900px;
+  margin-bottom: 52px;
+}
+
+.teaching-page .teaching-group:last-child {
+  margin-bottom: 0;
+}
+
+.teaching-page .teaching-group h2 {
+  font-size: clamp(1.35rem, 2.4vw, 1.9rem);
+  margin: 0 0 22px;
+}
+
+.teaching-page .course-entry {
+  padding: 0 0 22px;
+  margin: 0 0 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.teaching-page .course-entry:last-child {
+  margin-bottom: 0;
+}
+
+.teaching-page .course-entry h3 {
+  margin: 0 0 2px;
+  font-size: 1.15rem;
+}
+
+.teaching-page .course-institution {
+  margin: 0 0 8px;
+  color: var(--terracotta);
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.teaching-page .course-entry p,
+.teaching-page .teaching-group > p {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.teaching-page .course-entry p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.teaching-page .teaching-group > p {
+  margin: 0 0 18px;
+}
