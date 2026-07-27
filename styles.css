@@ -97,3 +97,61 @@ main,
   line-height: 1.7;
   margin: 0 0 20px;
 }
+/* Publications page adjustments */
+
+.publications-page .page-header {
+  padding: 34px 0 20px;
+}
+
+.publications-page .page-header h1 {
+  font-size: clamp(1.4rem, 2.45vw, 2.1rem);
+  margin-bottom: 0;
+}
+
+.publications-page .publications-content {
+  padding: 46px 0 64px;
+}
+
+.publications-page .publication-group {
+  max-width: 900px;
+  margin-bottom: 52px;
+}
+
+.publications-page .publication-group:last-child {
+  margin-bottom: 0;
+}
+
+.publications-page .publication-group h2 {
+  font-size: clamp(1.35rem, 2.4vw, 1.9rem);
+  margin: 0 0 20px;
+}
+
+.publications-page .publication-entry {
+  padding: 0 0 18px;
+  margin: 0 0 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.publications-page .publication-entry:last-child {
+  margin-bottom: 0;
+}
+
+.publications-page .publication-entry p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.publications-page .publication-year,
+.publications-page .publication-status {
+  font-weight: 600;
+  color: var(--forest-dark);
+}
+
+.publications-page .publication-link {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: .92rem;
+  font-weight: 600;
+  text-decoration: none;
+}
