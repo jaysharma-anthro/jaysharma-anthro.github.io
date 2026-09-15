@@ -630,4 +630,15 @@ main,
     margin-top: 2px;
   }
 
+}.cv-page .cv-publication a {
+  margin-left: 5px;
+  color: var(--forest-dark);
+  font-size: .86rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cv-page .cv-publication a:hover {
+  color: var(--terracotta);
 }
