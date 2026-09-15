@@ -419,4 +419,94 @@ main,
   .home-page .home-book {
     padding-top: 46px;
   }
+/* ==================================================
+   Minimal CV page
+   ================================================== */
 
+.cv-page .cv-main {
+  max-width: 920px;
+}
+
+.cv-page .cv-simple {
+  max-width: 760px;
+  padding: 82px 0 110px;
+}
+
+.cv-page .cv-label {
+  margin-bottom: 28px;
+
+  color: var(--terracotta);
+
+  font-size: .72rem;
+  font-weight: 600;
+
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.cv-page .cv-simple h1 {
+  margin: 0 0 24px;
+
+  font-size: clamp(1.9rem, 3vw, 2.55rem);
+  font-weight: 500;
+
+  letter-spacing: -.03em;
+}
+
+.cv-page .cv-description {
+  max-width: 680px;
+
+  margin: 0 0 38px;
+
+  font-size: 1rem;
+  line-height: 1.75;
+
+  color: var(--charcoal);
+}
+
+.cv-page .cv-details {
+  margin-bottom: 38px;
+
+  color: var(--muted);
+
+  font-size: .94rem;
+  line-height: 1.65;
+}
+
+.cv-page .cv-details p {
+  margin: 0;
+}
+
+
+/* CV download link */
+
+.cv-page .cv-download {
+  display: inline-block;
+
+  padding-bottom: 3px;
+
+  color: var(--forest-dark);
+
+  font-size: .94rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid var(--forest-dark);
+}
+
+.cv-page .cv-download:hover {
+  color: var(--terracotta);
+  border-color: var(--terracotta);
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .cv-page .cv-simple {
+    padding: 58px 0 80px;
+  }
+
+}
