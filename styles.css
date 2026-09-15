@@ -420,78 +420,76 @@ main,
     padding-top: 46px;
   }
 /* ==================================================
-   Minimal CV page
+   CV page
    ================================================== */
 
 .cv-page .cv-main {
   max-width: 920px;
 }
 
-.cv-page .cv-simple {
-  max-width: 760px;
-  padding: 82px 0 110px;
+
+/* HEADER */
+
+.cv-page .cv-header {
+  max-width: 790px;
+  padding: 72px 0 68px;
 }
 
 .cv-page .cv-label {
-  margin-bottom: 28px;
-
+  margin-bottom: 22px;
   color: var(--terracotta);
-
   font-size: .72rem;
   font-weight: 600;
-
   letter-spacing: .11em;
   text-transform: uppercase;
 }
 
-.cv-page .cv-simple h1 {
-  margin: 0 0 24px;
-
+.cv-page .cv-header h1 {
+  margin: 0 0 16px;
   font-size: clamp(1.9rem, 3vw, 2.55rem);
   font-weight: 500;
-
   letter-spacing: -.03em;
 }
 
 .cv-page .cv-description {
-  max-width: 680px;
-
-  margin: 0 0 38px;
-
+  max-width: 690px;
+  margin: 0 0 30px;
   font-size: 1rem;
   line-height: 1.75;
-
-  color: var(--charcoal);
 }
 
-.cv-page .cv-details {
-  margin-bottom: 38px;
-
+.cv-page .cv-contact {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 32px;
   color: var(--muted);
-
-  font-size: .94rem;
-  line-height: 1.65;
+  font-size: .9rem;
+  line-height: 1.6;
 }
 
-.cv-page .cv-details p {
+.cv-page .cv-contact p {
   margin: 0;
 }
 
+.cv-page .cv-contact a {
+  color: var(--muted);
+  text-decoration: none;
+}
 
-/* CV download link */
+.cv-page .cv-contact a:hover {
+  color: var(--terracotta);
+}
+
+
+/* DOWNLOAD */
 
 .cv-page .cv-download {
   display: inline-block;
-
   padding-bottom: 3px;
-
   color: var(--forest-dark);
-
-  font-size: .94rem;
+  font-size: .9rem;
   font-weight: 600;
-
   text-decoration: none;
-
   border-bottom: 1px solid var(--forest-dark);
 }
 
@@ -501,12 +499,135 @@ main,
 }
 
 
-/* Mobile */
+/* MAIN SECTIONS */
+
+.cv-page .cv-section {
+  max-width: 790px;
+  padding: 48px 0;
+  border-top: 1px solid var(--line);
+}
+
+.cv-page .cv-section h2 {
+  margin: 0 0 30px;
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: -.01em;
+}
+
+
+/* ENTRIES */
+
+.cv-page .cv-entry {
+  margin-bottom: 28px;
+}
+
+.cv-page .cv-entry:last-child {
+  margin-bottom: 0;
+}
+
+.cv-page .cv-entry h3 {
+  margin: 0 0 4px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cv-page .cv-entry p {
+  margin: 7px 0 0;
+  font-size: .91rem;
+  line-height: 1.65;
+}
+
+.cv-page .cv-meta {
+  color: var(--muted);
+}
+
+.cv-page .cv-date {
+  margin-left: 8px;
+}
+
+
+/* RESEARCH INTERESTS */
+
+.cv-page .cv-interests {
+  margin: 0;
+  max-width: 760px;
+  font-size: .94rem;
+  line-height: 1.8;
+}
+
+
+/* PUBLICATIONS */
+
+.cv-page .cv-subheading {
+  margin: 32px 0 14px;
+  font-size: .98rem;
+  font-weight: 600;
+}
+
+.cv-page .cv-section h2 + .cv-subheading {
+  margin-top: 0;
+}
+
+.cv-page .cv-publication {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: .91rem;
+  line-height: 1.7;
+}
+
+.cv-page .cv-year {
+  font-weight: 600;
+  color: var(--forest-dark);
+}
+
+
+/* LIST SECTIONS */
+
+.cv-page .cv-list {
+  margin: 0;
+  padding-left: 19px;
+}
+
+.cv-page .cv-list li {
+  margin-bottom: 10px;
+  padding-left: 4px;
+  font-size: .91rem;
+  line-height: 1.65;
+}
+
+
+/* LAST UPDATED */
+
+.cv-page .cv-updated {
+  max-width: 790px;
+  margin: 0;
+  padding: 12px 0 60px;
+  color: var(--muted);
+  font-size: .76rem;
+}
+
+
+/* MOBILE */
 
 @media (max-width: 700px) {
 
-  .cv-page .cv-simple {
-    padding: 58px 0 80px;
+  .cv-page .cv-header {
+    padding: 56px 0 50px;
+  }
+
+  .cv-page .cv-contact {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .cv-page .cv-section {
+    padding: 38px 0;
+  }
+
+  .cv-page .cv-date {
+    display: block;
+    margin-left: 0;
+    margin-top: 2px;
   }
 
 }
