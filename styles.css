@@ -686,4 +686,54 @@ main,
   .home-page .home-interests { padding: 42px 0 65px; }
   .research-page .research-introduction { padding: 58px 0 44px; }
   .research-page .research-project { padding: 42px 0 50px; }
+}/* ==========================================
+   Fieldwork Photographs
+   Homepage and Research Page
+   ========================================== */
+
+.fieldwork-photo {
+  width: 100%;
+  max-width: 790px;
+  margin: 35px 0 40px;
+}
+
+.fieldwork-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+/* Homepage landscape */
+
+.home-photo img {
+  aspect-ratio: 16 / 8;
+  object-fit: cover;
+  object-position: center 58%;
+}
+
+/* Research page mining photograph */
+
+.mine-photo img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Photograph captions */
+
+.fieldwork-photo figcaption {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #667069;
+}
+
+/* Mobile screens */
+
+@media (max-width: 700px) {
+  .home-photo img,
+  .mine-photo img {
+    aspect-ratio: 4 / 3;
+  }
 }
