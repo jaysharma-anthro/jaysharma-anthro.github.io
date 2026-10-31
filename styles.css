@@ -20,7 +20,10 @@ h1,h2,h3,.brand{font-family:'EB Garamond',Georgia,serif;color:var(--green);font-
 .home-hero .home-intro{min-width:0;max-width:none}
 .home-hero .home-intro p{max-width:none}
 .profile-photo{margin:0;width:235px;align-self:start}
-.profile-photo img{display:block;width:235px;height:350px;object-fit:cover;object-position:center 30%;border-radius:0}
+.profile-photo img{display:block;width:235px;height:310px;object-fit:cover;object-position:center 43%;border-radius:0}
 .home-hero h1{margin-top:0}
 .home-photo{max-width:var(--width)}
 @media(max-width:750px){.home-hero{grid-template-columns:1fr;gap:24px}.profile-photo{width:205px}.profile-photo img{width:205px;height:305px}}
+
+/* Portrait top aligns with heading; shorter frame ends near biography */
+@media(min-width:751px){.profile-photo{margin-top:7px}}
