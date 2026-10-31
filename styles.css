@@ -1,47 +1,9 @@
-/* Paste at the very END of your existing styles.css.
-   Shared typography and navigation for all pages. */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
-
-body { font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 1.7; }
-h1, h2, h3, .brand { font-family: 'EB Garamond', Georgia, serif; letter-spacing: -0.015em; }
-.nav-links a { font-family: 'Inter', sans-serif; font-size: .92rem; }
-
-/* A consistent, restrained title size on all five pages. */
-h1, .home-page h1, .research-page h1, .page-header h1, .cv-page h1 {
-  font-size: clamp(1.8rem, 2.4vw, 2.15rem);
-  line-height: 1.2;
-  margin: 0 0 16px;
-}
-
-/* Section headings: smaller than the old oversized home/research headings. */
-.home-page h2, .research-page h2 {
-  font-size: clamp(1.45rem, 2.1vw, 1.8rem);
-  line-height: 1.2;
-  margin: 0 0 14px;
-}
-
-/* Keep content width readable without changing global navigation width. */
-.home-page .scholar-main { padding-top: 54px; padding-bottom: 64px; }
-.home-page .scholar-intro,
-.home-page .scholar-interests,
-.home-page .fieldwork-photo { max-width: 790px; }
-.home-page .scholar-affiliation { margin: 0 0 28px; color: var(--muted, #667069); line-height: 1.55; }
-.home-page .scholar-bio { margin: 0; }
-.home-page .scholar-interests { padding-top: 26px; border-top: 1px solid var(--line, #d9d8cf); }
-.home-page .scholar-interests p { margin: 0 0 16px; }
-.home-page .research-link { font-weight: 600; text-decoration-thickness: 1px; text-underline-offset: 3px; }
-
-.fieldwork-photo { width: 100%; margin: 34px 0 40px; }
-.fieldwork-photo img { display: block; width: 100%; height: auto; border-radius: 0; object-fit: cover; }
-.home-photo img { aspect-ratio: 16 / 8; object-position: center 58%; }
-.mine-photo img { aspect-ratio: 16 / 9; object-position: center; }
-.fieldwork-photo figcaption { margin-top: 8px; font-size: .78rem; line-height: 1.5; color: var(--muted, #667069); }
-
-/* Research page: readable paragraphs and smaller project headings. */
-.research-page main p { max-width: 790px; }
-.research-page .project-label { color: var(--terracotta, #a75e43); font-size: .76rem; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 18px; }
-
-@media (max-width: 700px) {
-  .home-page .scholar-main { padding-top: 36px; }
-  .home-photo img, .mine-photo img { aspect-ratio: 4 / 3; }
-}
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+:root{--bg:#f7f4ed;--ink:#292d29;--green:#1d3e32;--muted:#606b64;--accent:#a65d42;--line:#dadbd2;--width:1060px;--reading:790px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif;font-size:16px;line-height:1.75}a{color:var(--green)}a:hover{color:var(--accent)}
+h1,h2,h3,.brand{font-family:'EB Garamond',Georgia,serif;color:var(--green);font-weight:600;line-height:1.18}h1{font-size:clamp(1.95rem,3vw,2.25rem);margin:0 0 22px}h2{font-size:clamp(1.55rem,2.5vw,1.85rem);margin:0 0 12px}h3{font-size:1.4rem;margin:0 0 10px}p{margin:0 0 19px}main{width:min(var(--width),calc(100% - 64px));margin:0 auto;padding:56px 0 90px}main p{max-width:var(--reading)}
+.site-header{border-bottom:1px solid var(--line);background:var(--bg)}.nav{width:min(var(--width),calc(100% - 64px));min-height:76px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-size:1.12rem;text-decoration:none;color:var(--ink)}.nav-links{display:flex;gap:24px;flex-wrap:wrap}.nav-links a{font-size:.91rem;text-decoration:none;color:var(--ink)}.nav-links a.active,.nav-links a:hover{color:var(--accent)}
+.home-intro{max-width:var(--reading)}.affiliation{color:var(--muted);line-height:1.6;margin:0 0 35px}.lead{font-size:1rem;line-height:1.85}.interests,.project,.page-section{margin-top:58px;padding-top:42px;border-top:1px solid var(--line)}.interests h2{font-size:1.55rem}.interests p{max-width:var(--reading)}.small-label{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}.project h2{font-size:1.85rem}.subtitle{color:var(--muted);font-size:.98rem;margin:0 0 25px}.question{font-style:italic;color:var(--green)}.text-link{font-weight:600;text-decoration:none}
+.fieldwork-photo{margin:32px 0 38px;max-width:var(--reading)}.fieldwork-photo img{display:block;width:100%;height:auto;object-fit:cover}.home-photo img{aspect-ratio:16/8;object-position:center 58%}.mine-photo img{aspect-ratio:16/9;object-position:center}.fieldwork-photo figcaption{font-size:.76rem;color:var(--muted);margin-top:8px;line-height:1.5}
+.publication{max-width:var(--reading);padding:18px 0;border-bottom:1px solid var(--line)}.publication p{margin:0}.publication .date{color:var(--green);font-weight:600}.course{max-width:var(--reading);padding:12px 0;border-bottom:1px solid var(--line)}.course strong{display:block;color:var(--green)}.course span{color:var(--muted);font-size:.92rem}.cv-download{display:inline-block;border:1px solid var(--green);padding:10px 16px;text-decoration:none;font-size:.9rem;font-weight:600;margin:12px 0 20px}.cv-download:hover{background:var(--green);color:white}footer{border-top:1px solid var(--line);color:var(--muted);font-size:.78rem}.footer-inner{width:min(var(--width),calc(100% - 64px));margin:auto;padding:25px 0;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+@media(max-width:650px){.nav{padding:18px 0;align-items:flex-start;flex-direction:column;gap:9px}.nav-links{gap:9px 17px}main{padding:42px 0 65px}.interests,.project,.page-section{margin-top:38px;padding-top:30px}.home-photo img,.mine-photo img{aspect-ratio:4/3}.footer-inner,.nav,main{width:calc(100% - 40px)}}
